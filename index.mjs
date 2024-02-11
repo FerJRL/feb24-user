@@ -61,5 +61,4 @@ app.get("/checkToken/:token", async (req, res) => {
   }
 });
 
-//app.use("/v1", verifyToken, v1);
-app.use("/v1", v1);
+app.use("/v1", verifyToken, v1);
