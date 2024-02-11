@@ -74,7 +74,7 @@ app.delete("/:id", async (req, res) => {
         res.send(e).status(500);
     }
 });
-//comentariocheck
+
 app.delete("/", async (req, res) => {
     try {
         let result = await usuarios.deleteMany(req.body);
